@@ -5,19 +5,7 @@
 using namespace std;
 
 	class MyClass{
-		
-		// Document My Class
-		/*-----------------------------
-		(0.0) --> The class Methoud Math 
-
-			[M-1] Power Number
-		    (0.1) -->  The class Methoud Mathematical Laws
-			[M-1] Calcule_CircleArea
-		    ----------
-		  
-		(1.0) The class Methoud ReadData
-		-----------------------------*/
-		
+	
 		public: // Access specifier
 
 		//-----------------------------------------
@@ -28,62 +16,62 @@ using namespace std;
 			
 			//-- [M-1]-----------------	
 			float Pow(short Number , short ous){
-              float Ruslt = 1 ; 
-              for(short index = 1 ; index <= ous ; index++){
-                 Ruslt = Ruslt * Number ; 
-              }
-              return Ruslt ; 
-            }
+                           float Ruslt = 1 ; 
+                           for(short index = 1 ; index <= ous ; index++){
+                           Ruslt = Ruslt * Number ; 
+                         }
+                         return Ruslt ; 
+                        }
 			//-------------------
 			
-			//-----------------------------------------
-		    // (0.1) The class Methoud Mathematical Laws
-		    //-----------------------------------------
-			class MathematicalLaws{
-			   public:             // Access specifier
-			  
-			   //-- [M:1] -----------------------
-			    float Calcule_CircleArea(float Radius){
-                  float const PI = 3.141592653589793  ;
-                  float Area = PI * (Radius * Radius) ;
-                return Area ; 
-               }
-			   //-------------------------
+		//-----------------------------------------
+		// (0.1) The class Methoud Mathematical Laws
+		//-----------------------------------------
+		class MathematicalLaws{
+	        public:               // Access specifier
+			 
+			 //-- [M:1] -----------------------
+			 float Calcule_CircleArea(float Radius){
+                            float const PI = 3.141592653589793  ;
+                            float Area = PI * (Radius * Radius) ;
+                            return Area ; 
+                          }
+			  //-------------------------
 			   
-			   //-- [M:2] -----------------------
-			    float Calcule_CircleAreaThroughDiameter(float Diameter){
-                  float const PI = 3.141592653589793 ;
-                  short Area = (PI * (Diameter * Diameter)) / 4 ;
-                  return Area ;
-                }
-               //-------------------------
+			  //-- [M:2] -----------------------
+			  float Calcule_CircleAreaThroughDiameter(float Diameter){
+                            float const PI = 3.141592653589793 ;
+                            short Area = (PI * (Diameter * Diameter)) / 4 ;
+                            return Area ;
+                          }
+                          //-------------------------
 				
-			   //-- [M:3] -----------------------
-				float Calcule_CircleAreaByDiameter(float D){
-                  float PI = 3.141592653589793 ; 
-                  float Area = (PI * pow(D , 2)) / 4 ;
-                  return Area ; 
-                }
-			   //-------------------------
+			  //-- [M:3] -----------------------
+		          float Calcule_CircleAreaByDiameter(float D){
+                             float PI = 3.141592653589793 ; 
+                             short Area = (PI * pow(D , 2)) / 4 ;
+                             return Area ; 
+                          }
+			  //-------------------------
 			   
-			   //-- [M:4] -----------------------
-			    float Calcule_CircleAreaInscribedInSquare(float SquareSide){
-                     const float PI = 3.141592653589793 ;
-                     float Area =  (PI * pow( SquareSide , 2 )) / 4 ;
-                    return Area ; 
-                }
-			   //-------------------------
+			  //-- [M:4] -----------------------
+			  float Calcule_CircleAreaInscribedInSquare(float SquareSide){
+                              const float PI = 3.141592653589793 ;
+                              float Area =  (PI * pow( SquareSide , 2 )) / 4 ;
+                              return Area ; 
+                          }
+			  //-------------------------
 			   
-			   //-- [M:4] -----------------------
-                float Circle_AreaAlongTheCircumference(float LongTheCircumference){
-                     const float PI = 3.141592653589793 ;
-                     float Area = (LongTheCircumference * LongTheCircumference)/(4 * PI) ;
-                     return Area ;
-                }
-			   //-------------------------
+			  //-- [M:4] -----------------------
+                          float Circle_AreaAlongTheCircumference(float LongTheCircumference){
+                             const float PI = 3.141592653589793 ;
+                             float Area = (LongTheCircumference * LongTheCircumference)/(4 * PI) ;
+                             return Area ;
+                          }
+			  //-------------------------
 			
-			};
-        };
+		  };
+                };
 		//-----------------------------------------
 		// (1.0) The class Methoud ReadData
 		//-----------------------------------------
@@ -91,14 +79,13 @@ using namespace std;
 		
          	public:             // Access specifier
 		   
-		    //-- [M:1] -------------------------------------------------------------
-            float ReadNumberAndMessage(string Message){
-                float Number = 0 ;
-                cout << Message << endl ;
-                cin >> Number ; 
-             
-              return Number ;
-            }
+		//-- [M:1] -------------------------------------------------------------
+                float ReadNumberAndMessage(string Message){
+                     float Number = 0 ;
+                     cout << Message << endl ;
+                     cin >> Number ; 
+                   return Number ;
+                }
 			//----------------------------------------------------------------------
 
 			
